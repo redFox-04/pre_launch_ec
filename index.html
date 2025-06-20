@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link rel="icon" type="image/png" href="https://redfox-04.github.io/pre_launch_ec/assets/Logo_1-CCrI2zUd.svg" />
+  <title>Esencia Creativa</title>
+  <style>
+    /* Estos estilos inline son importantes para el comportamiento del scroll */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      /* Evita la barra de scroll horizontal */
+      scroll-behavior: smooth;
+    }
+  </style>
+  <script type="module" crossorigin src="https://redfox-04.github.io/pre_launch_ec/assets/main-Dq8yjAMc.js"></script>
+  <link rel="stylesheet" crossorigin href="https://redfox-04.github.io/pre_launch_ec/assets/main-hRcqkjZ2.css">
+</head>
+
+<body class="relative h-max-[800px]">
+  <div class="loader-page">
+    <div class="loader"></div>
+    <p class="loading-text">Cargando...</p>
+  </div>
+
+  <div id="animation-container" class="fixed inset-0 z-0 h-screen w-screen overflow-hidden">
+    <img id="scroll-animation" src="https://redfox-04.github.io/pre_launch_ec/assets/ezgif-frame-013-Bn19dcki.jpg" alt="Animación de scroll de fondo"
+      class="absolute inset-0 h-full w-full object-cover" />
+  </div>
+
+  <div id="content-wrapper" class="relative z-10 bg-transparent text-white">
+    <header id="main-header"
+      class="fixed left-0 right-0 top-0 z-20 bg-black bg-opacity-70 py-4 text-white transition-all duration-500">
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <a href="#" class="text-2xl font-bold">
+          <img src="https://redfox-04.github.io/pre_launch_ec/assets/Logo_1-CCrI2zUd.svg" alt="Logo Esencia Creativa" class="h-10" />
+        </a>
+        <nav>
+          <ul class="flex space-x-6">
+            <li>
+              <a href="#countdown-section" class="hover:text-gray-300">Evento</a>
+            </li>
+            <li>
+              <a href="#preregister-section" class="hover:text-gray-300">Pre-registro</a>
+            </li>
+            <li>
+              <a href="#podcast-section" class="hover:text-gray-300">Podcast</a>
+            </li>
+            <li>
+              <a href="#johan-sofi-section" class="hover:text-gray-300">Más</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="countdown-section"
+      class="relative flex min-h-screen flex-col items-center justify-center py-20 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-8 text-4xl font-bold md:text-5xl">
+          ¡Falta poco para el gran evento!
+        </h2>
+        <div id="countdown" class="flex items-center justify-center rounded-lg bg-gray-800 bg-opacity-70 p-6 shadow-lg">
+          <div class="countdown-segment">
+            <div id="days" class="countdown-value">00</div>
+            <div class="countdown-label">Días</div>
+          </div>
+          <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
+          <div class="countdown-segment">
+            <div id="hours" class="countdown-value">00</div>
+            <div class="countdown-label">Horas</div>
+          </div>
+          <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
+          <div class="countdown-segment">
+            <div id="minutes" class="countdown-value">00</div>
+            <div class="countdown-label">Minutos</div>
+          </div>
+          <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
+          <div class="countdown-segment">
+            <div id="seconds" class="countdown-value">00</div>
+            <div class="countdown-label">Segundos</div>
+          </div>
+        </div>
+        <p class="mt-8 text-xl">14 de Julio a las 12:00 PM (Hora Colombia)</p>
+      </div>
+    </section>
+
+    <section id="banner-section" class="relative flex flex-col items-center justify-center py-20 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-6 text-5xl font-extrabold leading-tight md:text-6xl lg:text-7xl">
+          [PRE-REGISTRATE]
+        </h2>
+        <p class="mx-auto mb-8 max-w-3xl text-xl md:text-2xl">
+          Breve descripción atractiva del evento o lo que sea que promocione
+          este banner.
+        </p>
+        <a href="#"
+          class="rounded-full bg-blue-600 px-8 py-4 text-lg font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-blue-700">
+          ¡Conoce más!
+        </a>
+      </div>
+    </section>
+
+    <main id="preregister-section" class="relative flex flex-col items-center justify-center py-20 text-center">
+      <div class="container mx-auto max-w-2xl rounded-lg bg-gray-800 bg-opacity-70 p-8 px-4 shadow-xl">
+        <h2 class="mb-6 text-4xl font-bold md:text-5xl">
+          Pre-regístrate ahora
+        </h2>
+        <p class="mb-8 text-lg md:text-xl">
+          No te pierdas las últimas novedades y asegura tu lugar para recibir
+          información exclusiva.
+        </p>
+        <form class="space-y-6">
+          <div>
+            <input type="text" placeholder="Tu Nombre Completo"
+              class="w-full rounded-md bg-gray-700 p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <div>
+            <input type="email" placeholder="Tu Correo Electrónico"
+              class="w-full rounded-md bg-gray-700 p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <div>
+            <input type="tel" placeholder="Tu Número de Teléfono (opcional)"
+              class="w-full rounded-md bg-gray-700 p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
+          <button type="submit"
+            class="w-full rounded-md bg-green-600 px-6 py-4 text-xl font-bold text-white shadow-lg transition duration-300 ease-in-out hover:bg-green-700">
+            ¡Inscríbete ahora!
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <section id="podcast-section" class="relative flex flex-col items-center justify-center py-20 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-6 text-4xl font-bold md:text-5xl">
+          Escucha nuestro Podcast
+        </h2>
+        <p class="mx-auto mb-8 max-w-3xl text-lg md:text-xl">
+          Sumérgete en conversaciones profundas, historias inspiradoras y la
+          música que te encanta.
+        </p>
+        <div class="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
+          <div class="rounded-lg bg-gray-800 bg-opacity-70 p-6 shadow-lg">
+            <img src="path/to/podcast-cover-1.jpg" alt="Portada del Podcast Episodio 1"
+              class="mb-4 h-48 w-full rounded-md object-cover" />
+            <h3 class="mb-2 text-2xl font-semibold">
+              Episodio Reciente: [Título del Episodio]
+            </h3>
+            <p class="mb-4 text-gray-300">
+              Una breve descripción de lo que trata este episodio.
+            </p>
+            <a href="#"
+              class="inline-block rounded-full bg-purple-600 px-5 py-2 font-bold text-white transition duration-300 hover:bg-purple-700">Escuchar
+              Ahora</a>
+          </div>
+          <div class="rounded-lg bg-gray-800 bg-opacity-70 p-6 shadow-lg">
+            <img src="path/to/podcast-cover-2.jpg" alt="Portada del Podcast Episodio 2"
+              class="mb-4 h-48 w-full rounded-md object-cover" />
+            <h3 class="mb-2 text-2xl font-semibold">
+              Episodio Popular: [Otro Título]
+            </h3>
+            <p class="mb-4 text-gray-300">
+              Una breve descripción de este otro episodio.
+            </p>
+            <a href="#"
+              class="inline-block rounded-full bg-purple-600 px-5 py-2 font-bold text-white transition duration-300 hover:bg-purple-700">Escuchar
+              Ahora</a>
+          </div>
+        </div>
+        <p class="mt-8 text-xl">
+          Encuéntranos en Spotify, Apple Podcasts y más.
+        </p>
+      </div>
+    </section>
+
+    <section id="johan-sofi-section" class="relative flex flex-col items-center justify-center py-20 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-6 text-4xl font-bold md:text-5xl">
+          Más de Johan y Sofi
+        </h2>
+        <p class="mx-auto mb-8 max-w-3xl text-lg md:text-xl">
+          Descubre el universo musical de Johan y Sofi: su trayectoria,
+          discografía y próximos eventos.
+        </p>
+        <div class="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-lg bg-gray-800 bg-opacity-70 p-6 shadow-lg">
+            <h3 class="mb-3 text-2xl font-semibold">Discografía</h3>
+            <p class="mb-4 text-gray-300">
+              Explora nuestros álbumes y sencillos, y encuentra tu nueva
+              canción favorita.
+            </p>
+            <a href="#"
+              class="inline-block rounded-full bg-red-600 px-5 py-2 font-bold text-white transition duration-300 hover:bg-red-700">Ver
+              Música</a>
+          </div>
+          <div class="rounded-lg bg-gray-800 bg-opacity-70 p-6 shadow-lg">
+            <h3 class="mb-3 text-2xl font-semibold">Conciertos y Eventos</h3>
+            <p class="mb-4 text-gray-300">
+              No te pierdas la oportunidad de vernos en vivo. ¡Consulta
+              nuestras fechas!
+            </p>
+            <a href="#"
+              class="inline-block rounded-full bg-red-600 px-5 py-2 font-bold text-white transition duration-300 hover:bg-red-700">Próximas
+              Fechas</a>
+          </div>
+          <div class="rounded-lg bg-gray-800 bg-opacity-70 p-6 shadow-lg">
+            <h3 class="mb-3 text-2xl font-semibold">Nuestra Historia</h3>
+            <p class="mb-4 text-gray-300">
+              Conoce el viaje musical que nos ha traído hasta aquí.
+            </p>
+            <a href="#"
+              class="inline-block rounded-full bg-red-600 px-5 py-2 font-bold text-white transition duration-300 hover:bg-red-700">Leer
+              Más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer" class="relative bg-black bg-opacity-80 py-8 text-center text-white">
+      <div class="container mx-auto px-4">
+        <div class="mb-4 flex justify-center space-x-6">
+          <a href="#" class="text-gray-400 transition duration-300 hover:text-white" aria-label="Facebook"
+            title="Facebook">
+            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 transition duration-300 hover:text-white" title="Twitter"
+            aria-label="Twitter">
+            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.525 2.502h-1.05V13.91c0 1.074-.827 1.942-1.849 1.942-.824 0-1.503-.541-1.782-1.286l-.007-.024c-.035-.118-.052-.24-.052-.366 0-.693.56-1.253 1.253-1.253.256 0 .497.076.702.213V7.284a.75.75 0 011.057-.69c.813.252 1.393.993 1.393 1.847v5.52c0 2.222-1.815 4.037-4.037 4.037-2.222 0-4.037-1.815-4.037-4.037s1.815-4.037 4.037-4.037c.394 0 .78.058 1.144.17l-.004-.002a.75.75 0 01-.692-1.055 7.152 7.152 0 00-1.455-.262C6.915 7.135 4.5 9.47 4.5 12.247c0 2.777 2.247 5.025 5.025 5.025 2.777 0 5.025-2.247 5.025-5.025V4.75a.75.75 0 011.057-.69z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 transition duration-300 hover:text-white" title="Instagram"
+            aria-label="Instagram">
+            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12 4c-2.735 0-3.13.011-4.218.06-1.088.05-1.78.223-2.428.468-.648.245-1.218.59-1.767 1.139-.549.549-.894 1.119-1.139 1.767-.245.648-.418 1.34-.468 2.428-.049 1.088-.06 1.483-.06 4.218s.011 3.13.06 4.218c.05 1.088.223 1.78.468 2.428.245.648.59 1.218 1.139 1.767.549.549 1.119.894 1.767 1.139.648.245 1.34.418 2.428.468 1.088.049 1.483.06 4.218.06s3.13-.011 4.218-.06c1.088-.05 1.78-.223 2.428-.468.648-.245 1.218-.59 1.767-1.139.549-.549 1.119-.894 1.139-1.767.245-.648.418-1.34.468-2.428.049-1.088.06-1.483.06-4.218s-.011-3.13-.06-4.218c-.05-1.088-.223-1.78-.468-2.428-.245-.648-.59-1.218-1.139-1.767-.549-.549-1.119-.894-1.767-1.139-.648-.245-1.34-.418-2.428-.468C15.13 4.011 14.735 4 12 4zm0 2.203c2.404 0 2.68.01 3.637.052.883.04 1.36.196 1.635.303.275.107.472.247.697.472.225.225.365.422.472.697.107.275.263.752.303 1.635.042.957.052 1.233.052 3.637s-.01 2.68-.052 3.637c-.04.883-.196 1.36-.303 1.635-.107.275-.247.472-.472.697-.225.225-.422.365-.697.472-.275.107-.752.263-1.635.303-.957.042-1.233-.052-3.637.052s-2.68-.01-3.637-.052c-.883-.04-1.36-.196-1.635-.303-.275-.107-.472-.247-.697-.472-.225-.225-.365-.422-.472-.697-.107-.275-.263-.752-.303-1.635-.042-.957-.052-1.233-.052-3.637s.01-2.68.052-3.637c.04-.883.196-1.36.303-1.635.107-.275.247-.472.472-.697.225-.225.422-.365.697-.472.275-.107.752-.263 1.635-.303.957-.042 1.233-.052 3.637-.052zM12 7.747c-2.352 0-4.253 1.901-4.253 4.253S9.648 16.253 12 16.253s4.253-1.901 4.253-4.253S14.352 7.747 12 7.747zm0 1.5c1.518 0 2.753 1.235 2.753 2.753s-1.235 2.753-2.753 2.753-2.753-1.235-2.753-2.753 1.235-2.753 2.753-2.753zM16.924 7.21a.75.75 0 01-.75-.75.75.75 0 01.75-.75.75.75 0 01.75.75.75.75 0 01-.75.75z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 transition duration-300 hover:text-white">
+            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M19.812 5.094c-.958-.333-2.348-.608-4.045-.664C14.07 4.382 12 4.382 12 4.382s-2.07 0-3.767.048c-1.697.056-3.087.331-4.045.664C3.15 5.43 2.454 6.126 2.121 7.084c-.333.958-.608 2.348-.664 4.045-.048 1.697-.048 3.033-.048 3.033s0 1.336.048 3.033c.056 1.697.331 3.087.664 4.045.333.958 1.029 1.654 1.987 1.987.958.333 2.348.608 4.045.664 1.697.048 3.767.048 3.767.048s2.07 0 3.767-.048c1.697-.056 3.087-.331 4.045-.664.958-.333 1.654-1.029 1.987-1.987.333-.958.608-2.348.664-4.045.048-1.697.048-3.033.048-3.033s0-1.336-.048-3.033c-.056-1.697-.331-3.087-.664-4.045-.333-.958-1.029-1.654-1.987-1.987zM9.545 15.568V8.432L15.341 12l-5.796 3.568z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+        <p>&copy; 2024 Johan y Sofi. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
