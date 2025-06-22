@@ -16,8 +16,8 @@
       href="https://redfox-04.github.io/pre_launch_ec/assets/images/Logo_circular-Dp4iLLEV.svg"
     />
     <title>Esencia Creativa</title>
-    <script type="module" crossorigin src="https://redfox-04.github.io/pre_launch_ec/assets/main-DDWQbs5T.js"></script>
-    <link rel="stylesheet" crossorigin href="https://redfox-04.github.io/pre_launch_ec/assets/main-DGJjALHC.css">
+    <script type="module" crossorigin src="https://redfox-04.github.io/pre_launch_ec/assets/main-CTPr9K5u.js"></script>
+    <link rel="stylesheet" crossorigin href="https://redfox-04.github.io/pre_launch_ec/assets/main-D9xZG0oB.css">
   </head>
 
   <body class="bg-dark-bg">
@@ -25,7 +25,7 @@
       id="countdown-section"
       class="relative flex flex-col items-center justify-center pb-[147px] pt-[200px] text-center lg:pt-[292px]"
     >
-      <div id="header-logo">
+      <div id="header-logo" class="reveal-on-load">
         <img
           src="https://redfox-04.github.io/pre_launch_ec/assets/images/Logo_1-D79TPpVh.svg"
           alt="Logo"
@@ -33,55 +33,57 @@
         />
       </div>
 
-      <div class="mb-[83px] h-auto px-6 lg:mb-[133px] lg:w-[805px]">
-        <img
-          src="https://redfox-04.github.io/pre_launch_ec/assets/images/banner_muypronto-CBeHgA4o.png"
-          class="h-full w-full object-cover"
-          alt="muy pronto"
-        />
-      </div>
-
-      <div class="container mx-auto px-4 text-custom-yellow">
-        <div
-          id="countdown"
-          class="mb-[95px] flex scale-[0.8] items-center justify-center rounded-lg md:scale-[1.5] lg:scale-[1.5] lg:space-x-9 xl:scale-[1.8] 2xl:scale-[2]"
-        >
-          <div class="countdown-segment">
-            <div id="days" class="countdown-value">00</div>
-            <div class="countdown-label">Días</div>
-          </div>
-          <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
-          <div class="countdown-segment">
-            <div id="hours" class="countdown-value">00</div>
-            <div class="countdown-label">Horas</div>
-          </div>
-          <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
-          <div class="countdown-segment">
-            <div id="minutes" class="countdown-value">00</div>
-            <div class="countdown-label">Minutos</div>
-          </div>
-          <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
-          <div class="countdown-segment">
-            <div id="seconds" class="countdown-value">00</div>
-            <div class="countdown-label">Segundos</div>
-          </div>
+      <div id="header-content" class="reveal-on-load">
+        <div class="mb-[83px] h-auto px-6 lg:mb-[133px] lg:w-[805px]">
+          <img
+            src="https://redfox-04.github.io/pre_launch_ec/assets/images/banner_muypronto-CBeHgA4o.png"
+            class="h-full w-full object-cover"
+            alt="muy pronto"
+          />
         </div>
-        <p
-          class="m-0 p-0 text-[50px] font-extrabold leading-tight lg:text-[90px]"
-        >
-          14 DE JULIO
-        </p>
-        <p
-          class="m-0 p-0 text-[24px] leading-tight md:text-[32px] lg:text-[40px]"
-        >
-          12:00 M (Hora Colombia)
-        </p>
+
+        <div class="container mx-auto px-4 text-custom-yellow">
+          <div
+            id="countdown"
+            class="mb-[95px] flex scale-[0.8] items-center justify-center rounded-lg md:scale-[1.5] lg:scale-[1.5] lg:space-x-9 xl:scale-[1.8] 2xl:scale-[2]"
+          >
+            <div class="countdown-segment">
+              <div id="days" class="countdown-value">00</div>
+              <div class="countdown-label">Días</div>
+            </div>
+            <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
+            <div class="countdown-segment">
+              <div id="hours" class="countdown-value">00</div>
+              <div class="countdown-label">Horas</div>
+            </div>
+            <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
+            <div class="countdown-segment">
+              <div id="minutes" class="countdown-value">00</div>
+              <div class="countdown-label">Minutos</div>
+            </div>
+            <span class="mx-2 text-5xl font-bold md:text-6xl">:</span>
+            <div class="countdown-segment">
+              <div id="seconds" class="countdown-value">00</div>
+              <div class="countdown-label">Segundos</div>
+            </div>
+          </div>
+          <p
+            class="m-0 p-0 text-[50px] font-extrabold leading-tight lg:text-[90px]"
+          >
+            14 DE JULIO
+          </p>
+          <p
+            class="m-0 p-0 text-[24px] leading-tight md:text-[32px] lg:text-[40px]"
+          >
+            12:00 M (Hora Colombia)
+          </p>
+        </div>
       </div>
     </header>
     <main>
       <section
         id="preregister-section"
-        class="relative flex flex-col items-center justify-center bg-custom-yellow text-center"
+        class="reveal-on-load relative flex flex-col items-center justify-center bg-custom-yellow text-center"
       >
         <div
           id="banner-section"
@@ -116,17 +118,23 @@
           </h1>
         </div>
 
-        <div class="container mx-auto min-w-full max-w-2xl rounded-lg p-8 px-4">
+        <div
+          id="preregister-form"
+          class="container mx-auto min-w-full max-w-2xl rounded-lg p-8 px-4"
+        >
           <form class="mx-auto w-[700px] space-y-6 text-[24px]">
             <div>
               <input
+                required
                 type="text"
                 placeholder="Tu Nombre Completo"
                 class="w-full rounded-[30px] border border-black bg-transparent p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
               />
             </div>
             <div>
               <input
+                required
                 type="email"
                 placeholder="Tu Correo Electrónico"
                 class="w-full rounded-[30px] border border-black bg-transparent p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -134,6 +142,7 @@
             </div>
             <div>
               <input
+                required
                 type="text"
                 placeholder="Rol en tu iglesia"
                 class="w-full rounded-[30px] border border-black bg-transparent p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -144,6 +153,7 @@
             </div>
             <div>
               <input
+                required
                 type="text"
                 placeholder="Área de interes"
                 class="w-full rounded-[30px] border border-black bg-transparent p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -155,6 +165,7 @@
             </div>
             <div>
               <input
+                required
                 type="text"
                 placeholder="Ciudad y País"
                 class="w-full rounded-[30px] border border-black bg-transparent p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -169,14 +180,14 @@
             </a>
             <div class="flex w-[700px] items-center">
               <input
-                required
                 id="acepto"
+                required
                 type="checkbox"
                 class="ml-8 h-6 w-6 border border-custom-blue focus:ring-2 focus:ring-blue-500"
               />
               <label
                 for="acepto"
-                class="mb-5 flex-1 select-none py-3 text-[18px] text-custom-blue"
+                class="flex-1 select-none py-3 text-[18px] text-custom-blue"
               >
                 Acepto recibir información, recursos, y novedades sobre los
                 cursos y eventos.
@@ -209,14 +220,15 @@
 
       <section id="podcast-section" class="koroto relative py-20 text-center">
         <div
-          class="koroto3 mx-auto grid h-[428px] w-full max-w-[900px] grid-cols-1 gap-1 md:grid-cols-2 lg:max-w-[1280px]"
+          id="nuestro_podcast"
+          class="reveal-on-load mx-auto flex h-auto w-full max-w-[900px] flex-col items-center gap-8 md:h-[428px] md:flex-row lg:max-w-[1280px]"
         >
           <div
-            class="koroto4 container relative my-auto h-[300px] w-[360px] text-[70px] leading-none text-white lg:mx-0"
+            class="container relative w-full text-[70px] leading-none text-white md:w-1/3"
           >
             <span
               class="absolute bottom-0 right-0 flex translate-x-10 rotate-[95deg] lg:translate-x-5 lg:-rotate-12"
-              ><svg class="h-10 w-[108px] translate-y-2">
+              ><svg class="h-10 w-[108px] translate-y-10">
                 <use
                   href="https://redfox-04.github.io/pre_launch_ec/assets/images/sprite-v1-DGsPYg31.svg#icon_podcast_arrow"
                 ></use>
@@ -232,7 +244,7 @@
           </div>
 
           <div
-            class="koroto4 video-card-container group relative cursor-pointer overflow-hidden"
+            class="koroto4 video-card-container group relative h-[300px] w-full cursor-pointer overflow-hidden md:h-full md:w-2/3"
           >
             <img
               src="https://redfox-04.github.io/pre_launch_ec/assets/images/Caratula_video_-CPxtwlCb.jpg"
@@ -256,7 +268,7 @@
                 class="absolute bottom-0 flex h-1/4 w-full translate-y-full items-center justify-between bg-black/70 p-4 transition-transform duration-300 ease-in-out group-hover:translate-y-0"
               >
                 <h3 class="text-xl font-bold text-white">
-                  Fundamentos del Piano
+                  Esencia Creativa Podcast
                 </h3>
 
                 <div class="play-icon-small">
@@ -272,6 +284,36 @@
                 </div>
               </div>
             </a>
+          </div>
+        </div>
+
+        <div
+          id="jofi"
+          class="reveal-on-load relative mx-auto mt-20 flex h-[453px] max-w-[1184px] items-center"
+        >
+          <div
+            class="h-full w-[453px] flex-shrink-0 overflow-hidden rounded-full"
+          >
+            <img
+              src="https://redfox-04.github.io/pre_launch_ec/assets/images/johanysofi-fVLzmfvm.png"
+              alt="Foto de Johan y Sofi"
+              class="h-full w-full object-cover"
+            />
+          </div>
+
+          <div
+            class="flex flex-grow flex-col items-center justify-center text-center text-white"
+          >
+            <p class="text-[40px] leading-tight">
+              mas
+              <a
+                href="#"
+                class="underline transition-colors hover:text-custom-yellow"
+                >aquí</a
+              >
+              de
+            </p>
+            <p class="text-[90px] font-bold leading-none">JOHAN Y SOFI</p>
           </div>
         </div>
       </section>
@@ -319,6 +361,110 @@
         </div>
       </div>
     </footer>
+
+    <div id="policy-modal" class="hidden">
+      <div
+        id="modal-backdrop"
+        class="fixed inset-0 bg-black bg-opacity-60"
+      ></div>
+
+      <div class="fixed inset-0 z-10 flex items-center justify-center p-4">
+        <div
+          class="relative mx-auto h-full max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-lg bg-white p-6 shadow-xl lg:p-8"
+        >
+          <h2 class="mb-4 text-2xl font-bold text-gray-800">
+            Política de tratamiento de datos personales
+          </h2>
+
+          <div class="space-y-3 text-sm text-gray-600">
+            <p>
+              <strong
+                >1. Identificación del responsable del Tratamiento:</strong
+              >
+              De conformidad con lo establecido en la Ley 1581 de 2012 y el
+              Decreto 1377 de 2013, informamos que el responsable del
+              tratamiento de los datos personales es Esencia Creativa. Correo
+              electrónico de contacto: contacto@esenciacreativa.org. Dirección
+              electrónica (sitio web): esenciacreativa.org.
+            </p>
+            <p>
+              <strong>2. Finalidad del Tratamiento de los Datos:</strong> Los
+              datos personales que el titular suministre voluntariamente a
+              través del formulario web serán recolectados, almacenados, usados
+              y tratados con la finalidad de: Compartir información sobre
+              nuestros cursos y eventos. Enviar recursos gratuitos, novedades,
+              promociones, boletines informativos y demás contenidos educativos
+              relacionados. Brindar soporte y responder inquietudes o
+              solicitudes. Realizar análisis estadísticos internos para la
+              mejora del servicio y la experiencia del usuario.
+            </p>
+            <p>
+              <strong>3. Datos solicitados:</strong> En nuestro siguiente
+              formulario web solicitamos únicamente los datos personales,
+              necesarios para la finalidad mencionada: Nombre completo, Correo
+              electrónico, Rol en la iglesia, área de interés, Ciudad. Nota: No
+              solicitamos datos sensibles ni biométricos.
+            </p>
+            <p>
+              <strong>4. Derechos del Titular:</strong> Como titular de los
+              datos personales, usted tiene derecho a: Conocer, actualizar,
+              rectificar y suprimir sus datos personales. Solicitar prueba de la
+              autorización otorgada. Ser informado del uso que se ha dado a sus
+              datos. Revocar la autorización y/o solicitar la supresión del dato
+              cuando en el tratamiento no se respeten los principios, derechos y
+              garantías constitucionales y legales. Para ejercer sus derechos,
+              puede comunicarse a través del correo:
+              contacto@esenciacreativa.org.
+            </p>
+            <p>
+              <strong>5. Autorización del Titular:</strong> La recolección y
+              tratamiento de sus datos personales se hará únicamente con su
+              consentimiento previo, expreso e informado, el cual usted
+              manifiesta al marcar la casilla correspondiente en el formulario
+              web. Esta casilla no estará preseleccionada por defecto, para
+              asegurar que su autorización sea libre y voluntaria. La
+              autorización implica que usted conoce y acepta las condiciones
+              bajo las cuales se tratarán sus datos personales.
+            </p>
+            <p>
+              <strong>6. Medidas de seguridad:</strong> Esencia Creativa ha
+              adoptado las técnicas, humanas y administrativas necesarias para
+              garantizar la seguridad y confidencialidad de los datos personales
+              y evitar su adulteración, pérdida, consulta, uso o acceso no
+              autorizado o fraudulento.
+            </p>
+            <p>
+              <strong>7. Conservación de la Autorización:</strong> Para efectos
+              de prueba, se conservará el registro del consentimiento otorgado
+              (log del check, fecha, hora e IP del titular) al momento de llenar
+              el formulario web.
+            </p>
+            <p>
+              <strong>8. Acceso a la Política de Tratamiento de Datos:</strong>
+              Esta política estará disponible en todo momento a través de un
+              enlace visible en nuestro sitio web y en todos los formularios que
+              implican recolección de datos.
+            </p>
+            <p>
+              <strong>10. Modificaciones a la Política:</strong> Esencia
+              Creativa se reserva el derecho de modificar la presente Política
+              en cualquier momento. Las modificaciones entrarán en vigor desde
+              el momento de su publicación en nuestro sitio web.
+            </p>
+            <p class="mt-4 text-xs">
+              Fecha de última actualización: 22 de junio de 2025
+            </p>
+          </div>
+
+          <button
+            id="close-modal-btn"
+            class="absolute right-4 top-4 rounded-full bg-gray-200 px-3 py-1 text-xl font-bold text-gray-700 transition-colors hover:bg-gray-300"
+          >
+            &times;
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </body>
